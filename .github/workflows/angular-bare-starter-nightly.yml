@@ -1,0 +1,65 @@
+name: Angular - Bare Starter - Nightly
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/nightly:latest
+    env:
+      HOME: /home/bituser
+
+    steps:
+      - name: Initialize a workspace
+        run: |
+          bit
+          bvm
+          bvm config set RELEASE_TYPE nightly
+          bvm upgrade
+          bit new angular my-angular-workspace --aspect teambit.angular/angular --default-scope org.scope-name --log error
+      - name: Check initial status
+        run: |
+          cd my-angular-workspace
+          # debugging
+          bit list --log error
+          bit status --log error
+          bit templates --log error
+      - name: Create a new component
+        run: |
+          cd my-angular-workspace
+          bit create ng-module ui/my-first --log error
+          bit install --log error
+          bit list --log error
+          bit status --log error
+          bit start --log error &
+          checkserver http://localhost:3000
+      - name: Create a new app
+        run: |
+          cd my-angular-workspace
+          bit create ng-app apps/my-second --log error
+          bit install --add-missing-deps --log error
+          bit list --log error
+          bit use apps/my-second --log error
+          bit app list --log error
+          bit status --log error
+          bit run my-second --log error &
+          checkserver http://localhost:3000
+      - name: Test & Lint
+        run: |
+          cd my-angular-workspace
+          bit lint --log error
+          bit test --log error
+      - name: Create a local scope, compile and export
+        run: |
+          barescope my-org.my-scope-name my-angular-workspace
+          cd my-angular-workspace
+          bit scope rename org.scope-name my-org.my-scope-name --refactor --log error
+          bit link --log error
+          bit compile --log error
+          bit tag --message "initial tag" --log error
+          bit export --log error
+    continue-on-error: false
