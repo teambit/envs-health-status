@@ -1,4 +1,4 @@
-name: Vue env - Bare Starter (nightly) (debugging)
+name: Sample action for basic e2e test(courtesy of jinjiang)
 
 on:
   schedule:
