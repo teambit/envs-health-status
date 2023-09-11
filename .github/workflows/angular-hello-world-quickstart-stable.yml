@@ -1,4 +1,4 @@
-name: Angular - Hello world - Quick Start - Nightly
+name: Angular - Hello world - Quick Start - Stable
 
 on:
   schedule:
