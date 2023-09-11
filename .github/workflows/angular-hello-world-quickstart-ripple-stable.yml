@@ -1,0 +1,39 @@
+name: Angular - Hello world - Quick Start - Ripple - Stable
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/stable:latest
+    env:
+      HOME: /home/bituser
+
+    steps:
+      - name: Show BVM config
+        run: |
+          bvm config
+      - name: Initialize a workspace
+        run: |
+          bit init hello-world-angular-ripple --bare --log error
+      - name: Bit sign get-hello-world
+        run: |
+          cd hello-world-angular-ripple
+          bit sign learnbit-angular.hello-world/get-hello-world --multiple --rebuild --log error
+      - name: Bit sign envs/my-angular-env
+        run: |
+          cd hello-world-angular-ripple
+          bit sign learnbit-angular.hello-world/envs/my-angular-env --multiple --rebuild --log error
+      - name: Bit sign ui/hello-world
+        run: |
+          cd hello-world-angular-ripple
+          bit sign learnbit-angular.hello-world/ui/hello-world --multiple --rebuild --log error
+      - name: Bit sign hello-world-app
+        run: |
+          cd hello-world-angular-ripple
+          bit sign learnbit-angular.hello-world/hello-world-app --multiple --rebuild --log error
+    continue-on-error: false
