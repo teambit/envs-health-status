@@ -1,4 +1,4 @@
-name: Html - Hello world - Quick Start - Nightly
+name: Html - Hello world - Quick Start - Stable
 
 on:
   schedule:
