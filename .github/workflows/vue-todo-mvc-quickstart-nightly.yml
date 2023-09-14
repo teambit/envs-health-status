@@ -1,0 +1,47 @@
+name: Todo MVC - Quick Start (nightly)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/ops:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Initialize a workspace
+      run: |
+        bit
+        bvm
+        bvm config set RELEASE_TYPE nightly
+        bvm upgrade
+        bit new vue-todomvc my-vue-todomvc --aspect learnbit-vue.todomvc/starters/todomvc
+    - name: Run the app component
+      run: |
+        cd my-vue-todomvc
+        bit run todomvc-app &
+        checkserver http://localhost:3000
+    - name: Preview components
+      run: |
+        cd my-vue-todomvc
+        bit start &
+        checkserver http://localhost:3000
+    - name: Collaborate
+      run: |
+        cd my-vue-todomvc
+        bit status
+    - name: Create a local scope, compile and export
+      run: |
+        barescope my-org.my-scope-name my-vue-todomvc
+        cd my-vue-todomvc
+        bit scope rename org.scope-name my-org.my-scope-name --refactor
+        bit link
+        bit compile
+        bit tag --message "initial tag"
+        bit export
+    continue-on-error: false
