@@ -1,0 +1,39 @@
+name: Lit - Hello world - Quick Start - Ripple - Nightly
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/nightly:latest
+    env:
+      HOME: /home/bituser
+
+    steps:
+      - name: Show BVM config
+        run: |
+          bvm config
+      - name: Initialize a workspace
+        run: |
+          bit init hello-world-vanilla-ripple --bare --log error
+      - name: Bit sign get-hello-world
+        run: |
+          cd hello-world-vanilla-ripple
+          bit sign teambit.web-components/quickstart/hello-world --multiple --rebuild --log error
+      - name: Bit sign envs/my-lit-env
+        run: |
+          cd hello-world-vanilla-ripple
+          bit sign teambit.web-components/quickstart/hello-world-lit-app --multiple --rebuild --log error
+      - name: Bit sign ui/hello-world
+        run: |
+          cd hello-world-vanilla-ripple
+          bit sign teambit.web-components/quickstart/my-shared-styles --multiple --rebuild --log error
+      - name: Bit sign hello-world-app
+        run: |
+          cd hello-world-vanilla-ripple
+          bit sign teambit.web-components/quickstart/footer-function --multiple --rebuild --log error
+    continue-on-error: false
