@@ -22,7 +22,7 @@ jobs:
       - name: Create a React component and set env
         run: |
           cd my-workspace
-          bit create html pages/welcome --env my-org.my-scope/envs/my-html-env --log error
+          bit create html pages/welcome --log error
       - name: Install dependencies
         run: |
           cd my-workspace
