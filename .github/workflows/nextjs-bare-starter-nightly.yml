@@ -1,0 +1,57 @@
+name:  Next.js - Bare Starter - Nightly
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/ops:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Initialize a workspace
+      run: |
+        bit
+        bvm
+        bvm config set RELEASE_TYPE nightly
+        bvm upgrade
+        bit new nextjs my-nextjs-workspace --env teambit.nextjs/nextjs --log error
+    - name: Check initial status
+      run: |
+        cd my-nextjs-workspace
+        bit list --log error
+        bit status --log error
+        bit templates --log error
+    - name: Create a new app
+      run: |
+        cd my-nextjs-workspace
+        bit create nextjs apps/my-nextjs-app
+        bit install --log error
+        bit list --log error
+        bit use apps/my-nextjs-app
+        bit app list --log error
+        bit status --log error
+        bit run my-nextjs-app &
+        checkserver http://localhost:3000
+    - name: Lint & test
+      run: |
+        cd my-nextjs-workspace
+        bit list --log error
+        bit status --log error
+        bit lint --log error
+        bit test --log error
+    - name: Create a local scope, compile and export
+      run: |
+        barescope my-org.my-scope-name my-nextjs-workspace
+        cd my-nextjs-workspace
+        bit scope rename org.scope-name my-org.my-scope-name --refactor  --log error
+        bit link --log error
+        bit compile --log error
+        bit tag --message "initial tag" --log error
+        bit export --log error
+    continue-on-error: false
