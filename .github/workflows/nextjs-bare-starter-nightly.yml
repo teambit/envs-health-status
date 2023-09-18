@@ -20,7 +20,7 @@ jobs:
         bvm
         bvm config set RELEASE_TYPE nightly
         bvm upgrade
-        bit new nextjs my-nextjs-workspace --env teambit.nextjs/nextjs --log error
+        bit new nextjs my-nextjs-workspace --env teambit.nextjs/nextjs --default-scope org.scope-name --log error
     - name: Check initial status
       run: |
         cd my-nextjs-workspace
