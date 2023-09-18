@@ -19,7 +19,7 @@ jobs:
       - name: Create a new workspace
         run: |
           bit new angular my-workspace --env teambit.angular/angular --default-scope my-org.my-scope --log error
-      - name: Create a React component and set env
+      - name: Create an Angular component and set env
         run: |
           cd my-workspace
           bit create ng-module pages/welcome --env my-org.my-scope/envs/my-angular-env --log error
