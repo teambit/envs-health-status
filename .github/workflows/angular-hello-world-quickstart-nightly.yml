@@ -12,7 +12,6 @@ jobs:
       image: bitsrc/nightly:latest
     env:
       HOME: /home/bituser
-
     steps:
       - name: Update BVM
         run: |

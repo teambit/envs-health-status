@@ -12,7 +12,6 @@ jobs:
       image: bitsrc/stable:latest
     env:
       HOME: /home/bituser
-
     steps:
       - name: Show BVM config
         run: |
