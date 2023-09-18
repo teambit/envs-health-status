@@ -13,9 +13,12 @@ jobs:
     env:
       HOME: /home/bituser
     steps:
-      - name: Show BVM config
+      - name: Update BVM
         run: |
+          bvm config set RELEASE_TYPE nightly
+          bvm upgrade
           bvm config
+          bit --version
       - name: Initialize a new workspace
         run: |
           bit init my-workspace --default-scope my-org.my-scope --log error

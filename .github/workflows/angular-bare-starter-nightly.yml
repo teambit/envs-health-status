@@ -14,12 +14,14 @@ jobs:
       HOME: /home/bituser
 
     steps:
-      - name: Initialize a workspace
+      - name: Update BVM
         run: |
-          bit
-          bvm
           bvm config set RELEASE_TYPE nightly
           bvm upgrade
+          bvm config
+          bit --version
+      - name: Initialize a workspace
+        run: |
           bit new angular my-angular-workspace --aspect teambit.angular/angular --default-scope org.scope-name --log error
       - name: Check initial status
         run: |

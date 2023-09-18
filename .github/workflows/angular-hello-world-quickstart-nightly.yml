@@ -14,9 +14,12 @@ jobs:
       HOME: /home/bituser
 
     steps:
-      - name: Show BVM config
+      - name: Update BVM
         run: |
+          bvm config set RELEASE_TYPE nightly
+          bvm upgrade
           bvm config
+          bit --version
       - name: Initialize a workspace
         run: |
           bit new hello-world-angular my-hello-world-angular --env teambit.community/starters/hello-world-angular --log error
