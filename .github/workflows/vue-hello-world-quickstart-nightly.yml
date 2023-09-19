@@ -16,10 +16,11 @@ jobs:
     steps:
     - name: Initialize a workspace
       run: |
-        bit
-        bvm
         bvm config set RELEASE_TYPE nightly
+        bvm config
+        bvm versions
         bvm upgrade
+        bit --version
         bit new vue-hello-world my-vue-hello-world --aspect learnbit-vue.hello-world/starters/hello-world
     - name: Run the app component
       run: |

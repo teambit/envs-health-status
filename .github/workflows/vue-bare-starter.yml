@@ -16,6 +16,7 @@ jobs:
     steps:
     - name: Initialize a workspace
       run: |
+        bit --version
         bit new vue-bare my-bare-vue-workspace --env teambit.vue/vue
     - name: Check initial status
       run: |

@@ -1,0 +1,69 @@
+name: Vue env - Quick Start - Ripple (nightly)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/ops:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Initialize a workspace
+      run: |
+        bvm config set RELEASE_TYPE nightly
+        bvm config
+        bvm versions
+        bvm upgrade
+        bit --version
+        bit init my-vue-workspace --bare --log error
+    - name: Bit sign get-hello-world
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.hello-world/get-hello-world --multiple --rebuild --log error
+    - name: Bit sign ui/hello-world
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.hello-world/ui/hello-world --multiple --rebuild --log error
+    - name: Bit sign hello-world-app
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.hello-world/hello-world-app --multiple --rebuild --log error
+    - name: Bit sign todomvc-todo-entity
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/todo-entity --multiple --rebuild --log error
+    - name: Bit sign todomvc-todo
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/todo --multiple --rebuild --log error
+    - name: Bit sign todomvc-todo-list
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/todo-list --multiple --rebuild --log error
+    - name: Bit sign todomvc-todo-store
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/todo-store --multiple --rebuild --log error
+    - name: Bit sign todomvc-header
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/header --multiple --rebuild --log error
+    - name: Bit sign todomvc-footer
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/footer --multiple --rebuild --log error
+    - name: Bit sign todomvc-toggle-all
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/toggle-all --multiple --rebuild --log error
+    - name: Bit sign todomvc-app
+      run: |
+        cd my-vue-workspace
+        bit sign learnbit-vue.todomvc/app --multiple --rebuild --log error
+    continue-on-error: false
