@@ -1,4 +1,4 @@
-name: Next.js - Bare Starter
+name: Next.js - Create App - Nightly
 
 on:
   schedule:

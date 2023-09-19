@@ -19,7 +19,7 @@ jobs:
         bit
         bvm
         bvm upgrade
-        bit new nextjs my-nextjs-workspace --env teambit.nextjs/nextjs
+        bit new nextjs my-nextjs-workspace --env teambit.nextjs/nextjs --default-scope org.scope-name --log error
     - name: Check initial status
       run: |
         cd my-nextjs-workspace
@@ -30,27 +30,27 @@ jobs:
       run: |
         cd my-nextjs-workspace
         bit create nextjs apps/my-nextjs-app
-        bit install
-        bit list
-        bit use apps/my-nextjs-app
-        bit app list
-        bit status
-        bit run my-nextjs-app &
+        bit install --log error
+        bit list --log error
+        bit use apps/my-nextjs-app --log error
+        bit app list --log error
+        bit status --log error
+        bit run my-nextjs-app --log error &
         checkserver http://localhost:3000
     - name: Lint and test
       run: |
         cd my-nextjs-workspace
-        bit list
-        bit status
-        bit lint
-        bit test
+        bit list --log error
+        bit status --log error
+        bit lint --log error
+        bit test --log error
     - name: Create a local scope, compile and export
       run: |
         barescope my-org.my-scope-name my-nextjs-workspace
         cd my-nextjs-workspace
-        bit scope rename org.scope-name my-org.my-scope-name --refactor
-        bit link
-        bit compile
-        bit tag --message "initial tag"
-        bit export
+        bit scope rename org.scope-name my-org.my-scope-name --refactor --log error
+        bit link --log error
+        bit compile --log error
+        bit tag --message "initial tag" --log error
+        bit export --log error
     continue-on-error: false
