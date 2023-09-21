@@ -159,6 +159,37 @@
 [HTML-HELLO-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-nightly.yml/badge.svg
 
 
+<!-- Lit -->
+[LIT-BARE-STARTER]: https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-stable.yml
+[LIT-BARE-STARTER-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-stable.yml/badge.svg
+[LIT-BARE-STARTER-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-nightly.yml
+[LIT-BARE-STARTER-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-nightly.yml/badge.svg
+
+[LIT-NEW-WORKSPACE]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-stable.yml
+[LIT-NEW-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-stable.yml/badge.svg
+[LIT-NEW-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-nightly.yml
+[LIT-NEW-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-nightly.yml/badge.svg
+
+[LIT-NEW-COMPONENT]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-stable.yml
+[LIT-NEW-COMPONENT-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-stable.yml/badge.svg
+[LIT-NEW-COMPONENT-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-nightly.yml
+[LIT-NEW-COMPONENT-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-nightly.yml/badge.svg
+
+[LIT-CREATE-ENV-COMP]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-stable.yml
+[LIT-CREATE-ENV-COMP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-stable.yml/badge.svg
+[LIT-CREATE-ENV-COMP-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-nightly.yml
+[LIT-CREATE-ENV-COMP-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-nightly.yml/badge.svg
+
+[LIT-HELLO]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-stable.yml
+[LIT-HELLO-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-stable.yml/badge.svg
+[LIT-HELLO-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-nightly.yml
+[LIT-HELLO-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-nightly.yml/badge.svg
+
+[LIT-HELLO-RIPPLE]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-stable.yml
+[LIT-HELLO-RIPPLE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-stable.yml/badge.svg
+[LIT-HELLO-RIPPLE-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml
+[LIT-HELLO-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml/badge.svg
+
 # Envs Health Status
 Basic e2e runs for default envs created and maintained by bit
 
@@ -177,7 +208,7 @@ This section shows the `health` status of the Bit community guides and quickstar
 |[Vue Todo MVC][VUE-QUICKSTART-TODO-MVC] | [![][VUE-QUICKSTART-TODO-MVC-SB]][VUE-QUICKSTART-TODO-MVC-S] | [![][VUE-QUICKSTART-TODO-MVC-NB]][VUE-QUICKSTART-TODO-MVC-N] |
 
 ## React Env Status
-This section shows the `health` status of usage scenarios.
+The "health" status of the React env on Bit.
 
 |Test Scenario|Bit Stable|Bit Nightly|
 |--------------|---------|-----------| 
@@ -191,7 +222,7 @@ This section shows the `health` status of usage scenarios.
 |Init Workspace + Create React App] | [![][REACT-CREATE-APP-SB]][REACT-CREATE-APP-S] | [![][REACT-CREATE-APP-NB]][REACT-CREATE-APP-N] |
 
 ## Angular Env Status
-Collection of tests for the `Angular Env`.
+The "health" status of the Angular env on Bit.
 
 |Test Scenario|Bit Stable|Bit Nightly|
 |--------------|---------|-----------|
@@ -231,11 +262,11 @@ The "health" status of the Html env on Bit.
 
 The "health" status of the Lit env on Bit.
 
-| Test Scenario                                  | Bit Stable                                                                                                                                                                                                                                                | Bit Nightly                                                                                                                                                                                                                                                 |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| Lit Bare Starter                          | [![Lit - Bare Starter - Stable](https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-stable.yml)                    |[![Lit - Bare Starter - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-bare-starter-nightly.yml)                    |
-| New Lit Workspace                          | [![Lit - Create Workspace - Stable](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-stable.yml)                    | [![Lit - Create Workspace - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-workspace-nightly.yml)                    |
-| New Lit Workspace + Create Component       | [![Lit - Create Component - Stable](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-stable.yml)                    | [![Lit - Create Component - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-component-nightly.yml)                    |
-| Init Workspace + Create Env + Create Component | [![Lit - Create Env and Component - Stable](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-stable.yml)            | [![Lit - Create Env and Component - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-create-env-component-nightly.yml)            |
-| Hello World Quickstart                         | [![Lit - Hello world - Quick Start - Stable](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-stable.yml)        | [![Lit - Hello world - Quick Start - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-nightly.yml)        |
-| Hello World Quickstart Ripple                  | [![Lit - Hello world - Quick Start - Ripple - Stable](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-stable.yml) | [![Lit - Hello world - Quick Start - Ripple - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml) |
+| Test Scenario | Bit Stable | Bit Nightly |
+|---------------|------------|-------------|
+|Lit Bare Starter | [![][LIT-BARE-STARTER-SB]][LIT-BARE-STARTER] | [![][LIT-BARE-STARTER-NB]][LIT-BARE-STARTER-N] |
+|New Lit Workspace | [![][LIT-NEW-WORKSPACE-SB]][LIT-NEW-WORKSPACE] | [![][LIT-NEW-WORKSPACE-NB]][LIT-NEW-WORKSPACE-N] |
+|New Lit Workspace + Create Component | [![][LIT-NEW-COMPONENT-SB]][LIT-NEW-COMPONENT] | [![][LIT-NEW-COMPONENT-NB]][LIT-NEW-COMPONENT-N] |
+|Init Workspace + Create Env + Create Component | [![][LIT-CREATE-ENV-COMP-SB]][LIT-CREATE-ENV-COMP] | [![][LIT-CREATE-ENV-COMP-NB]][LIT-CREATE-ENV-COMP-N] |
+|Hello World Quickstart | [![][LIT-HELLO-SB]][LIT-HELLO] | [![][LIT-HELLO-NB]][LIT-HELLO-N] |
+|Hello World Quickstart Ripple | [![][LIT-HELLO-RIPPLE-SB]][LIT-HELLO-RIPPLE] | [![][LIT-HELLO-RIPPLE-NB]][LIT-HELLO-RIPPLE-N] |
