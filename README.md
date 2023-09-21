@@ -90,10 +90,10 @@
 [VUE-QUICKSTART-TODO-MVC-N]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-todo-mvc-nightly.yml
 [VUE-QUICKSTART-TODO-MVC-NB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-todo-mvc-nightly.yml/badge.svg
 
-# envs-health-status
+# Envs Health Status
 basic e2e runs for default envs created and maintained by bit
 
-# Quick Start Status
+## Quick Start Status
 This section shows the `health` status of the Bit community guides and quickstarts.
 
 |Quick Start|Bit Stable|Bit Nightly|
@@ -107,7 +107,7 @@ This section shows the `health` status of the Bit community guides and quickstar
 |[Vue Hello][VUE-QUICKSTART] | [![][VUE-QUICKSTART-SB]][VUE-QUICKSTART-S] | [![][VUE-QUICKSTART-NB]][VUE-QUICKSTART-N] |
 |[Vue Todo MVC][VUE-QUICKSTART-TODO-MVC] | [![][VUE-QUICKSTART-TODO-MVC-SB]][VUE-QUICKSTART-TODO-MVC-S] | [![][VUE-QUICKSTART-TODO-MVC-NB]][VUE-QUICKSTART-TODO-MVC-N] |
 
-# React Env Status
+## React Env Status
 This section shows the `health` status of usage scenarios.
 
 |Test Scenario|Bit Stable|Bit Nightly|
@@ -121,7 +121,7 @@ This section shows the `health` status of usage scenarios.
 |Init Workspace + Create Env + Create Context] | [![][REACT-CREATE-ENV-CONTEXT-SB]][REACT-CREATE-ENV-CONTEXT-S] | [![][REACT-CREATE-APP-NB]][REACT-CREATE-ENV-CONTEXT-N] |
 |Init Workspace + Create React App] | [![][REACT-CREATE-APP-SB]][REACT-CREATE-APP-S] | [![][REACT-CREATE-APP-NB]][REACT-CREATE-APP-N] |
 
-# Angular Env Status
+## Angular Env Status
 Collection of tests for the `Angular Env`.
 
 | Test Scenario                                  | Bit Stable                                                                                                                                                                                                                                                | Bit Nightly                                                                                                                                                                                                                                                 |
@@ -133,7 +133,7 @@ Collection of tests for the `Angular Env`.
 | Hello World Quickstart                         | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-stable.yml)        | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-nightly.yml)        |
 | Hello World Quickstart Ripple                  | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-stable.yml) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-nightly.yml) |
 
-# Vue Env Status
+## Vue Env Status
 
 The "health" status of the Vue env on Bit.
 
@@ -145,7 +145,7 @@ The "health" status of the Vue env on Bit.
 | [Todo MVC](https://bit.dev/docs/quick-start/todomvc) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart.yml) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart-nightly.yml) |
 
 
-# Html Env Status
+## Html Env Status
 
 The "health" status of the Html env on Bit.
 
@@ -159,7 +159,7 @@ The "health" status of the Html env on Bit.
 | Hello World Quickstart Ripple                  | [![Html - Hello world - Quick Start - Ripple - Stable](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-stable.yml) | [![Html - Hello world - Quick Start - Ripple - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-nightly.yml) |
 
 
-# Lit Env Status
+## Lit Env Status
 
 The "health" status of the Lit env on Bit.
 
