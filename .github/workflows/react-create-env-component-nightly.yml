@@ -1,4 +1,4 @@
-name: REACT-CREATE-ENV-COMPONENT-NIGHTLY
+name: React - Create Env Component - Nightly
 
 on:
   schedule:
