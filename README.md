@@ -118,7 +118,7 @@
 [VUE-QUICKSTART-TODO-MVC-NB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-todo-mvc-nightly.yml/badge.svg
 
 # Envs Health Status
-basic e2e runs for default envs created and maintained by bit
+Basic e2e runs for default envs created and maintained by bit
 
 ## Quickstart Status
 This section shows the `health` status of the Bit community guides and quickstarts.
@@ -160,7 +160,6 @@ Collection of tests for the `Angular Env`.
 |Hello World Quickstart| [![][ANGULAR-CREATE-WORKSPACE-SB]][ANGULAR-QUICKSTART-S] | [![][ANGULAR-CREATE-WORKSPACE-NB]][ANGULAR-QUICKSTART-N] |
 |Hello World Quickstart Ripple | [![][ANGULAR-QUICKSTART-RIPPLE-SB]][ANGULAR-QUICKSTART-RIPPLE-S] | [![][ANGULAR-QUICKSTART-RIPPLE-NB]][ANGULAR-QUICKSTART-RIPPLE-N] |
           
-
 ## Vue Env Status
 
 The "health" status of the Vue env on Bit.
