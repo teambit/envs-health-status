@@ -1,4 +1,5 @@
-name: REACT-QUICKSTART-DESIGN-NIGHTLY
+name: React - Quickstart Design - Nightly
+
 
 on:
   schedule:
