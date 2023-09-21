@@ -27,7 +27,7 @@ jobs:
         run: |
           cd my-workspace
           bit create lit pages/welcome-home --aspect teambit.web-components/lit --log error
-          bit env set my-org.my-scope/pages/welcome my-org.my-scope/envs/my-lit-env --log error
+          bit env set my-org.my-scope/pages/welcome-home my-org.my-scope/envs/my-lit-env --log error
       - name: Install dependencies
         run: |
           cd my-workspace
