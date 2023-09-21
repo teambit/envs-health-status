@@ -1,0 +1,46 @@
+name: REACT-QUICKSTART-DESIGN-STABLE
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/stable:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Show BVM config
+      run: |
+        bvm config
+    - name: Initialize a workspace
+      run: |
+        bit new design-system my-design-system --env teambit.community/starters/design-system
+    - name: Run the app component
+      run: |
+        cd my-design-system
+        bit run design &
+        checkserver http://localhost:3000
+    - name: Preview components
+      run: |
+        cd my-design-system
+        bit start &
+        checkserver http://localhost:3000
+    - name: Collaborate
+      run: |
+        cd my-design-system
+        bit status
+    - name: Create a local scope, compile and export
+      run: |
+        barescope my-org.my-scope-name my-design-system
+        cd my-design-system
+        bit scope rename org.scope-name my-org.my-scope-name --refactor
+        bit link
+        bit compile
+        bit tag --message "initial tag"
+        bit export
+    continue-on-error: false

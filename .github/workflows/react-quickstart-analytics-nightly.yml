@@ -1,0 +1,46 @@
+name: REACT-QUICKSTART-ANALYTICS-NIGHTLY
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/nightly:latest
+    env:
+      HOME: /home/bituser
+
+    steps:
+      - name: Show BVM config
+        run: |
+          bvm config
+      - name: Initialize a workspace
+        run: |
+          bit new analytics my-analytics --env teambit.community/starters/analytics
+      - name: Run the app component
+        run: |
+          cd my-analytics
+          bit run analytics-app &
+          checkserver http://localhost:3000
+      - name: Preview components
+        run: |
+          cd my-analytics
+          bit start &
+          checkserver http://localhost:3000
+      - name: Collaborate
+        run: |
+          cd my-analytics
+          bit status
+      - name: Create a local scope, compile and export
+        run: |
+          barescope my-org.my-scope-name my-analytics
+          cd my-analytics
+          bit scope rename org.scope-name my-org.my-scope-name --refactor
+          bit link
+          bit compile
+          bit tag --message "initial tag"
+          bit export
+    continue-on-error: false

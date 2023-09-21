@@ -1,0 +1,46 @@
+name: REACT-QUICKSTART-WIKI-STABLE
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/stable:latest
+    env:
+      HOME: /home/bituser
+
+    steps:
+      - name: Show BVM config
+        run: |
+          bvm config
+      - name: Initialize a workspace
+        run: |
+          bit new wiki my-wiki --env teambit.community/starters/wiki
+      - name: Run the app component
+        run: |
+          cd my-wiki
+          bit run wiki &
+          checkserver http://localhost:3000
+      - name: Preview components
+        run: |
+          cd my-wiki
+          bit start &
+          checkserver http://localhost:3000
+      - name: Collaborate
+        run: |
+          cd my-wiki
+          bit status
+      - name: Create a local scope, compile and export
+        run: |
+          barescope my-org.my-scope-name my-wiki
+          cd my-wiki
+          bit scope rename org.scope-name my-org.my-scope-name --refactor
+          bit link
+          bit compile
+          bit tag --message "initial tag"
+          bit export
+    continue-on-error: false

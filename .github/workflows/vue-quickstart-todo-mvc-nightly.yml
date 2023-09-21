@@ -1,0 +1,47 @@
+name: VUE-QUICKSTART-TODO-MVC-NIGHTLY
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/nightly:latest
+    env:
+      HOME: /home/bituser
+
+    steps:
+      - name: Show BVM config
+        run: |
+          bvm config
+      - name: Initialize a workspace
+        run: |
+          bit new vue-todomvc my-vue-todomvc --env learnbit-vue.todomvc/starters/todomvc
+      - name: Run the app component
+        run: |
+          cd my-vue-todomvc
+          bit install --add-missing-deps
+          bit run todomvc-app &
+          checkserver http://localhost:3000
+      - name: Preview components
+        run: |
+          cd my-vue-todomvc
+          bit start &
+          checkserver http://localhost:3000
+      - name: Collaborate
+        run: |
+          cd my-vue-todomvc
+          bit status
+      - name: Create a local scope, compile and export
+        run: |
+          barescope my-org.my-scope-name my-vue-todomvc
+          cd my-vue-todomvc
+          bit scope rename org.scope-name my-org.my-scope-name --refactor
+          bit link
+          bit compile
+          bit tag --message "initial tag"
+          bit export
+    continue-on-error: false

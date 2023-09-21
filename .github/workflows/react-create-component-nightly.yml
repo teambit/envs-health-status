@@ -1,0 +1,57 @@
+name: REACT-CREATE-COMPONENT-NIGHTLY
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/nightly:latest
+    env:
+      HOME: /home/bituser
+    steps:
+    - name: Show BVM config
+      run: |
+        bvm config
+    - name: Create a new workspace
+      run: |
+        bit new react my-workspace --env teambit.react/react-env --default-scope my-org.my-scope
+    - name: Create a React component and set env
+      run: |
+        cd my-workspace
+        bit create react pages/welcome --env my-org.my-scope/envs/my-react-env
+    - name: Install dependencies
+      run: |
+        cd my-workspace
+        bit install --add-missing-deps
+    - name: Show components, envs and status
+      run: |
+        cd my-workspace
+        bit status
+        bit envs
+    - name: Compile, lint, test components
+      run: |
+        cd my-workspace
+        bit compile
+        bit lint
+        bit test
+    - name: Preview components
+      run: |
+        cd my-workspace
+        bit start &
+        checkserver http://localhost:3000
+    - name: Tag components
+      run: |
+        cd my-workspace
+        bit tag --message "initial tag"
+    - name: Create a local scope
+      run: |
+        barescope my-org.my-scope my-workspace
+    - name: Export components
+      run: |
+        cd my-workspace
+        bit export
+    continue-on-error: false
