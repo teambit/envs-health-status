@@ -1,4 +1,4 @@
-name: ANGULAR-QUICKSTART-NIGHTLY
+name: Angular - Hello world - Quick Start - Nightly
 
 on:
   schedule:
