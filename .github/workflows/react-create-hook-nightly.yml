@@ -1,4 +1,4 @@
-name: REACT-CREATE-HOOK-NIGHTLY
+name: React - Create Hook - Nightly
 
 on:
   schedule:
