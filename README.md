@@ -70,12 +70,39 @@
 [REACT-CREATE-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/react-create-workspace-nightly.yml
 [REACT-CREATE-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/react-create-workspace-nightly.yml/badge.svg
 
+
 <!-- Angular: Quickstarts -->
 [ANGULAR-QUICKSTART]: https://bit.dev/docs/quick-start/hello-world-angular
 [ANGULAR-QUICKSTART-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-stable.yml
 [ANGULAR-QUICKSTART-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-stable.yml/badge.svg
 [ANGULAR-QUICKSTART-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-nightly.yml
 [ANGULAR-QUICKSTART-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-nightly.yml/badge.svg
+
+<!-- Angular: Env Test Scenarios -->
+[ANGULAR-CREATE-WORKSPACE-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-stable.yml
+[ANGULAR-CREATE-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-stable.yml/badge.svg
+[ANGULAR-CREATE-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-nightly.yml
+[ANGULAR-CREATE-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-nightly.yml/badge.svg
+
+[ANGULAR-CREATE-COMPONENT-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-stable.yml
+[ANGULAR-CREATE-COMPONENT-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-stable.yml/badge.svg
+[ANGULAR-CREATE-COMPONENT-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-nightly.yml
+[ANGULAR-CREATE-COMPONENT-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-nightly.yml/badge.svg
+
+[ANGULAR-CREATE-ENV-COMPONENT-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-stable.yml
+[ANGULAR-CREATE-ENV-COMPONENT-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-stable.yml/badge.svg
+[ANGULAR-CREATE-ENV-COMPONENT-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-nightly.yml
+[ANGULAR-CREATE-ENV-COMPONENT-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-nightly.yml/badge.svg
+
+[ANGULAR-CREATE-APP-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-stable.yml
+[ANGULAR-CREATE-APP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-stable.yml/badge.svg
+[ANGULAR-CREATE-APP-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-nightly.yml
+[ANGULAR-CREATE-APP-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-nightly.yml/badge.svg
+
+[ANGULAR-QUICKSTART-RIPPLE-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-ripple-stable.yml
+[ANGULAR-QUICKSTART-RIPPLE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-ripple-stable.yml/badge.svg
+[ANGULAR-QUICKSTART-RIPPLE-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-ripple-nightly.yml
+[ANGULAR-QUICKSTART-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-ripple-nightly.yml/badge.svg
 
 <!-- Vue: Quickstarts -->
 [VUE-QUICKSTART]: https://bit.dev/docs/quick-start/hello-world-vue
@@ -111,7 +138,7 @@ This section shows the `health` status of the Bit community guides and quickstar
 This section shows the `health` status of usage scenarios.
 
 |Test Scenario|Bit Stable|Bit Nightly|
-|--------------|---------|---------| 
+|--------------|---------|-----------| 
 |New React Workspace] | [![][REACT-CREATE-WORKSPACE-SB]][REACT-CREATE-WORKSPACE-S] | [![][REACT-CREATE-WORKSPACE-NB]][REACT-CREATE-WORKSPACE-N] |
 |New React Workspace + Create Component] | [![][REACT-CREATE-COMPONENT-SB]][REACT-CREATE-APP-S] | [![][REACT-CREATE-COMPONENT-NB]][REACT-CREATE-COMPONENT-N] |
 |New React Workspace + Create Hook] | [![][REACT-CREATE-HOOK-SB]][REACT-CREATE-HOOK-S] | [![][REACT-CREATE-HOOK-NB]][REACT-CREATE-HOOK-N] |
@@ -124,14 +151,15 @@ This section shows the `health` status of usage scenarios.
 ## Angular Env Status
 Collection of tests for the `Angular Env`.
 
-| Test Scenario                                  | Bit Stable                                                                                                                                                                                                                                                | Bit Nightly                                                                                                                                                                                                                                                 |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| New Angular Workspace                          | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-stable.yml)                    | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-nightly.yml)                    |
-| New Angular Workspace + Create Component       | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-stable.yml)                    | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-component-nightly.yml)                    |
-| Init Workspace + Create Env + Create Component | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-stable.yml)            | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-env-component-nightly.yml)            |
-| Init Workspace + Create Angular App            | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-stable.yml)                                | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-create-app-nightly.yml)                                |
-| Hello World Quickstart                         | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-stable.yml)        | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-nightly.yml)        |
-| Hello World Quickstart Ripple                  | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-stable.yml) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/angular-hello-world-quickstart-ripple-nightly.yml) |
+|Test Scenario|Bit Stable|Bit Nightly|
+|--------------|---------|-----------|
+|New Angular Workspace| [![][ANGULAR-CREATE-WORKSPACE-SB]][ANGULAR-CREATE-WORKSPACE-S] | [![][ANGULAR-CREATE-WORKSPACE-NB]][ANGULAR-CREATE-WORKSPACE-N] |
+|New Angular Workspace + Create Component| [![][ANGULAR-CREATE-COMPONENT-SB]][ANGULAR-CREATE-COMPONENT-S] | [![][ANGULAR-CREATE-COMPONENT-NB]][ANGULAR-CREATE-COMPONENT-N] |
+|Init Workspace + Create Env + Create Component| [![][ANGULAR-CREATE-ENV-COMPONENT-SB]][ANGULAR-CREATE-ENV-COMPONENT-S] | [![][ANGULAR-CREATE-ENV-COMPONENT-NB]][ANGULAR-CREATE-ENV-COMPONENT-N] |
+|Init Workspace + Create Angular App| [![][ANGULAR-CREATE-APP-SB]][ANGULAR-CREATE-APP-S] | [![][ANGULAR-CREATE-APP-NB]][ANGULAR-CREATE-APP-N] |
+|Hello World Quickstart| [![][ANGULAR-CREATE-WORKSPACE-SB]][ANGULAR-QUICKSTART-S] | [![][ANGULAR-CREATE-WORKSPACE-NB]][ANGULAR-QUICKSTART-N] |
+|Hello World Quickstart Ripple | [![][ANGULAR-QUICKSTART-RIPPLE-SB]][ANGULAR-QUICKSTART-RIPPLE-S] | [![][ANGULAR-QUICKSTART-RIPPLE-NB]][ANGULAR-QUICKSTART-RIPPLE-N] |
+          
 
 ## Vue Env Status
 
