@@ -1,4 +1,4 @@
-name: VUE-QUICKSTART-TODO-MVC-NIGHTLY
+name: Vue - Quickstart Todo MVC - Nightly
 
 on:
   schedule:
