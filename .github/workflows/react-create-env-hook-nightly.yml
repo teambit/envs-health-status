@@ -1,4 +1,4 @@
-name: REACT-CREATE-ENV-HOOK-NIGHTLY
+name: React - Create Env Hook - Nightly
 
 on:
   schedule:
