@@ -1,4 +1,4 @@
-<!-- React: Quickstarts -->
+<!-- React -->
 [REACT-QUICKSTART]: https://bit.dev/docs/quick-start/hello-world
 [REACT-QUICKSTART-S]: https://github.com/teambit/envs-health-status/actions/workflows/react-quickstart-stable.yml
 [REACT-QUICKSTART-SB]: https://github.com/teambit/envs-health-status/actions/workflows/react-quickstart-stable.yml/badge.svg
@@ -29,7 +29,6 @@
 [REACT-QUICKSTART-WIKI-N]: https://github.com/teambit/envs-health-status/actions/workflows/react-quickstart-wiki-nightly.yml
 [REACT-QUICKSTART-WIKI-NB]: https://github.com/teambit/envs-health-status/actions/workflows/react-quickstart-wiki-nightly.yml/badge.svg
 
-<!-- React: Env Test Scenarios -->
 [REACT-CREATE-APP-S]: https://github.com/teambit/envs-health-status/actions/workflows/react-create-app-stable.yml
 [REACT-CREATE-APP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/react-create-app-stable.yml/badge.svg
 [REACT-CREATE-APP-N]: https://github.com/teambit/envs-health-status/actions/workflows/react-create-app-nightly.yml
@@ -71,14 +70,13 @@
 [REACT-CREATE-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/react-create-workspace-nightly.yml/badge.svg
 
 
-<!-- Angular: Quickstarts -->
+<!-- Angular -->
 [ANGULAR-QUICKSTART]: https://bit.dev/docs/quick-start/hello-world-angular
 [ANGULAR-QUICKSTART-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-stable.yml
 [ANGULAR-QUICKSTART-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-stable.yml/badge.svg
 [ANGULAR-QUICKSTART-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-nightly.yml
 [ANGULAR-QUICKSTART-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-nightly.yml/badge.svg
 
-<!-- Angular: Env Test Scenarios -->
 [ANGULAR-CREATE-WORKSPACE-S]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-stable.yml
 [ANGULAR-CREATE-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-stable.yml/badge.svg
 [ANGULAR-CREATE-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-create-workspace-nightly.yml
