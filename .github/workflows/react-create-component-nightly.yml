@@ -1,4 +1,4 @@
-name: REACT-CREATE-COMPONENT-NIGHTLY
+name: React - Create Component - Nightly
 
 on:
   schedule:
