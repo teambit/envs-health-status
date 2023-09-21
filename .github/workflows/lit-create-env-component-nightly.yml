@@ -22,7 +22,7 @@ jobs:
       - name: Create a Lit env
         run: |
           cd my-workspace
-          bit create lit-env envs/my-lit-env --log error
+          bit create lit-env teambit.web-components/lit  --log error
       - name: Create a Lit component and set env
         run: |
           cd my-workspace
