@@ -1,4 +1,4 @@
-name: REACT-QUICKSTART-WIKI-NIGHTLY
+name: React - Quickstart Wiki - Nightly
 
 on:
   schedule:
