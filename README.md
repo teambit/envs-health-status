@@ -102,7 +102,8 @@
 [ANGULAR-QUICKSTART-RIPPLE-N]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-ripple-nightly.yml
 [ANGULAR-QUICKSTART-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/angular-quickstart-ripple-nightly.yml/badge.svg
 
-<!-- Vue: Quickstarts -->
+
+<!-- Vue -->
 [VUE-QUICKSTART]: https://bit.dev/docs/quick-start/hello-world-vue
 [VUE-QUICKSTART-S]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-stable.yml
 [VUE-QUICKSTART-SB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-stable.yml/badge.svg
@@ -114,6 +115,17 @@
 [VUE-QUICKSTART-TODO-MVC-SB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-todo-mvc-stable.yml/badge.svg
 [VUE-QUICKSTART-TODO-MVC-N]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-todo-mvc-nightly.yml
 [VUE-QUICKSTART-TODO-MVC-NB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-quickstart-todo-mvc-nightly.yml/badge.svg
+
+[VUE-DEFAULT-STARTER-S]: https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter-stable.yml
+[VUE-DEFAULT-STARTER-SB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter-stable.yml/badge.svg
+[VUE-DEFAULT-STARTER-N]: https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter-nightly.yml
+[VUE-DEFAULT-STARTER-NB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter-nightly.yml/badge.svg
+
+[VUE-BARE-STARTER-S]: https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter-stable.yml
+[VUE-BARE-STARTER-SB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter-stable.yml/badge.svg
+[VUE-BARE-STARTER-N]: https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter-nightly.yml
+[VUE-BARE-STARTER-NB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter-nightly.yml/badge.svg
+
 
 # Envs Health Status
 Basic e2e runs for default envs created and maintained by bit
@@ -162,12 +174,12 @@ Collection of tests for the `Angular Env`.
 
 The "health" status of the Vue env on Bit.
 
-| Guide         | Status | Nightly |
+|Test Scenario| Bit Stable | Bit Nightly |
 |--------------|--------|-------|
-| Default Starter | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter.yml) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-default-starter-nightly.yml) |
-| Bare Starter | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter.yml) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter-nightly.yml) |
-| [Hello Vue](https://bit.dev/docs/quick-start/hello-world-vue) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-hello-world-quickstart.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-hello-world-quickstart.yml) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-hello-world-quickstart-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-hello-world-quickstart-nightly.yml) |
-| [Todo MVC](https://bit.dev/docs/quick-start/todomvc) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart.yml) | [![Github Action](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/vue-todo-mvc-quickstart-nightly.yml) |
+|Default Starter | [![][VUE-DEFAULT-STARTER-SB]][VUE-DEFAULT-STARTER-S] | [![][VUE-DEFAULT-STARTER-NB]][VUE-DEFAULT-STARTER-N] |
+|Bare Starter | [![][VUE-BARE-STARTER-SB]][VUE-BARE-STARTER-S] | [![][VUE-BARE-STARTER-NB]][VUE-BARE-STARTER-N] |
+|[Vue Hello][VUE-QUICKSTART] | [![][VUE-QUICKSTART-SB]][VUE-QUICKSTART-S] | [![][VUE-QUICKSTART-NB]][VUE-QUICKSTART-N] |
+|[Vue Todo MVC][VUE-QUICKSTART-TODO-MVC] | [![][VUE-QUICKSTART-TODO-MVC-SB]][VUE-QUICKSTART-TODO-MVC-S] | [![][VUE-QUICKSTART-TODO-MVC-NB]][VUE-QUICKSTART-TODO-MVC-N] |
 
 
 ## Html Env Status
