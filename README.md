@@ -127,6 +127,38 @@
 [VUE-BARE-STARTER-NB]: https://github.com/teambit/envs-health-status/actions/workflows/vue-bare-starter-nightly.yml/badge.svg
 
 
+<!-- HTML -->
+[HTML-BARE-STARTER]: https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-stable.yml
+[HTML-BARE-STARTER-SB]: https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-stable.yml/badge.svg
+[HTML-BARE-STARTER-N]: https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-nightly.yml
+[HTML-BARE-STARTER-NB]: https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-nightly.yml/badge.svg
+
+[HTML-NEW-WORKSPACE]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-stable.yml
+[HTML-NEW-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-stable.yml/badge.svg
+[HTML-NEW-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-nightly.yml
+[HTML-NEW-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-nightly.yml/badge.svg
+
+[HTML-NEW-COMPONENT]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-stable.yml
+[HTML-NEW-COMPONENT-SB]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-stable.yml/badge.svg
+[HTML-NEW-COMPONENT-N]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-nightly.yml
+[HTML-NEW-COMPONENT-NB]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-nightly.yml/badge.svg
+
+[HTML-CREATE-ENV-COMP]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-stable.yml
+[HTML-CREATE-ENV-COMP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-stable.yml/badge.svg
+[HTML-CREATE-ENV-COMP-N]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-nightly.yml
+[HTML-CREATE-ENV-COMP-NB]: https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-nightly.yml/badge.svg
+
+[HTML-HELLO]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-stable.yml
+[HTML-HELLO-SB]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-stable.yml/badge.svg
+[HTML-HELLO-N]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-nightly.yml
+[HTML-HELLO-NB]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-nightly.yml/badge.svg
+
+[HTML-HELLO-RIPPLE]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-stable.yml
+[HTML-HELLO-RIPPLE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-stable.yml/badge.svg
+[HTML-HELLO-RIPPLE-N]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-nightly.yml
+[HTML-HELLO-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-nightly.yml/badge.svg
+
+
 # Envs Health Status
 Basic e2e runs for default envs created and maintained by bit
 
@@ -186,15 +218,14 @@ The "health" status of the Vue env on Bit.
 
 The "health" status of the Html env on Bit.
 
-| Test Scenario                                  | Bit Stable                                                                                                                                                                                                                                                | Bit Nightly                                                                                                                                                                                                                                                 |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| Html Bare Starter                          | [![Html - Bare Starter - Stable](https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-stable.yml)                    |[![Html - Bare Starter - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-bare-starter-nightly.yml)                    |
-| New Html Workspace                          | [![Html - Create Workspace - Stable](https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-stable.yml)                    | [![Html - Create Workspace - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-create-workspace-nightly.yml)                    |
-| New Html Workspace + Create Component       | [![Html - Create Component - Stable](https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-stable.yml)                    | [![Html - Create Component - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-create-component-nightly.yml)                    |
-| Init Workspace + Create Env + Create Component | [![Html - Create Env and Component - Stable](https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-stable.yml)            | [![Html - Create Env and Component - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-create-env-component-nightly.yml)            |
-| Hello World Quickstart                         | [![Html - Hello world - Quick Start - Stable](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-stable.yml)        | [![Html - Hello world - Quick Start - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-nightly.yml)        |
-| Hello World Quickstart Ripple                  | [![Html - Hello world - Quick Start - Ripple - Stable](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-stable.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-stable.yml) | [![Html - Hello world - Quick Start - Ripple - Nightly](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-nightly.yml/badge.svg)](https://github.com/teambit/envs-health-status/actions/workflows/html-hello-world-quickstart-ripple-nightly.yml) |
-
+| Test Scenario | Bit Stable | Bit Nightly |
+|---------------|------------|-------------|
+|Html Bare Starter | [![][HTML-BARE-STARTER-SB]][HTML-BARE-STARTER] | [![][HTML-BARE-STARTER-NB]][HTML-BARE-STARTER-N] |
+|New Html Workspace | [![][HTML-NEW-WORKSPACE-SB]][HTML-NEW-WORKSPACE] | [![][HTML-NEW-WORKSPACE-NB]][HTML-NEW-WORKSPACE-N] |
+|New Html Workspace + Create Component | [![][HTML-NEW-COMPONENT-SB]][HTML-NEW-COMPONENT] | [![][HTML-NEW-COMPONENT-NB]][HTML-NEW-COMPONENT-N] |
+|Init Workspace + Create Env + Create Component | [![][HTML-CREATE-ENV-COMP-SB]][HTML-CREATE-ENV-COMP] | [![][HTML-CREATE-ENV-COMP-NB]][HTML-CREATE-ENV-COMP-N] |
+|Hello World Quickstart | [![][HTML-HELLO-SB]][HTML-HELLO] | [![][HTML-HELLO-NB]][HTML-HELLO-N] |
+|Hello World Quickstart Ripple | [![][HTML-HELLO-RIPPLE-SB]][HTML-HELLO-RIPPLE] | [![][HTML-HELLO-RIPPLE-NB]][HTML-HELLO-RIPPLE-N] |
 
 ## Lit Env Status
 
