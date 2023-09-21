@@ -1,4 +1,4 @@
-name: VUE-QUICKSTART-NIGHTLY
+name: Vue - Quickstart - Nightly
 
 on:
   schedule:
