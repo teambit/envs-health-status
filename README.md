@@ -93,7 +93,7 @@
 # Envs Health Status
 basic e2e runs for default envs created and maintained by bit
 
-## Quick Start Status
+## Quickstart Status
 This section shows the `health` status of the Bit community guides and quickstarts.
 
 |Quick Start|Bit Stable|Bit Nightly|
