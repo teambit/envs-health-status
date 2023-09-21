@@ -22,7 +22,7 @@ jobs:
       - name: Create a React component and set env
         run: |
           cd my-workspace
-          bit create lit pages/welcome --log error
+          bit create lit pages/welcome-home --log error
       - name: Install dependencies
         run: |
           cd my-workspace
