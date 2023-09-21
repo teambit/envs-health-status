@@ -1,4 +1,4 @@
-name: REACT-CREATE-ENV-CONTEXT-NIGHTLY
+name: React - Create Env Context - Nightly
 
 on:
   schedule:
