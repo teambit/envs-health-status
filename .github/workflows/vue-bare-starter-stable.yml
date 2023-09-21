@@ -1,4 +1,4 @@
-name: Vue env - Bare Starter
+name: Vue env - Bare Starter - Stable
 
 on:
   schedule:
@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: 
-      image: bitsrc/ops:latest
+      image: bitsrc/stable:latest
     env:
       HOME: /home/bituser
         
