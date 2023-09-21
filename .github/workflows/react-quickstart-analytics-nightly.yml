@@ -1,4 +1,4 @@
-name: REACT-QUICKSTART-ANALYTICS-NIGHTLY
+name: React - Quickstart Analytics - Nightly
 
 on:
   schedule:
