@@ -244,8 +244,7 @@ The "health" status of the Vue env on Bit.
 |[Vue Hello][VUE-QUICKSTART] | [![][VUE-QUICKSTART-SB]][VUE-QUICKSTART-S] | [![][VUE-QUICKSTART-NB]][VUE-QUICKSTART-N] |
 |[Vue Todo MVC][VUE-QUICKSTART-TODO-MVC] | [![][VUE-QUICKSTART-TODO-MVC-SB]][VUE-QUICKSTART-TODO-MVC-S] | [![][VUE-QUICKSTART-TODO-MVC-NB]][VUE-QUICKSTART-TODO-MVC-N] |
 
-
-## Html Env Status
+# Html Env Status
 
 The "health" status of the Html env on Bit.
 
