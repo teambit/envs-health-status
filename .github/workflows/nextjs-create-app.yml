@@ -25,6 +25,10 @@ jobs:
         cd my-nextjs-workspace
         bit create nextjs apps/my-nextjs-app --aspect bitdev.nextjs/nextjs-env --log error
         bit install --add-missing-deps --log error
+        cat > .gitignore << EOF \
+          .next \
+          EOF
+        cat .gitignore
         bit use apps/my-nextjs-app --log error
     - name: Show components, envs and status
       run: |
