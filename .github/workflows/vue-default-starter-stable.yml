@@ -17,7 +17,7 @@ jobs:
     - name: Initialize a workspace
       run: |
         bit --version
-        bit new vue my-vue-workspace --env teambit.vue/vue
+        bit new vue my-vue-workspace --env bitdev.vue/vue-env
     - name: Check initial status
       run: |
         cd my-vue-workspace
