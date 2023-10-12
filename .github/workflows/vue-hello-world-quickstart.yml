@@ -21,7 +21,7 @@ jobs:
     - name: Run the app component
       run: |
         cd my-vue-hello-world
-        bit run hello-world-app-app &
+        bit run hello-world-app &
         checkserver http://localhost:3000
     - name: Preview components
       run: |
