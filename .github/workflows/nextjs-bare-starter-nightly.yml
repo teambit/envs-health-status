@@ -30,10 +30,8 @@ jobs:
     - name: Create a new app
       run: |
         cd my-nextjs-workspace
-        bit create nextjs apps/my-nextjs-app
         bit install --log error
         bit list --log error
-        bit use apps/my-nextjs-app
         bit app list --log error
         bit status --log error
         bit run my-nextjs-app &
