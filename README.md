@@ -190,6 +190,17 @@
 [LIT-HELLO-RIPPLE-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml
 [LIT-HELLO-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml/badge.svg
 
+<!-- Next.js -->
+[NEXTJS-CREATE-WORKSPACE-S]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-workspace-stable.yml
+[NEXTJS-CREATE-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-workspace-stable.yml/badge.svg
+[NEXTJS-CREATE-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-workspace-nightly.yml
+[NEXTJS-CREATE-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-workspace-nightly.yml/badge.svg
+
+[NEXTJS-CREATE-APP-S]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-app-stable.yml
+[NEXTJS-CREATE-APP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-app-stable.yml/badge.svg
+[NEXTJS-CREATE-APP-N]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-app-nightly.yml
+[NEXTJS-CREATE-APP-NB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-app-nightly.yml/badge.svg
+
 # Envs Health Status
 Basic e2e runs for default envs created and maintained by bit
 
@@ -269,3 +280,12 @@ The "health" status of the Lit env on Bit.
 |Init Workspace + Create Env + Create Component | [![][LIT-CREATE-ENV-COMP-SB]][LIT-CREATE-ENV-COMP] | [![][LIT-CREATE-ENV-COMP-NB]][LIT-CREATE-ENV-COMP-N] |
 |Hello World Quickstart | [![][LIT-HELLO-SB]][LIT-HELLO] | [![][LIT-HELLO-NB]][LIT-HELLO-N] |
 |Hello World Quickstart Ripple | [![][LIT-HELLO-RIPPLE-SB]][LIT-HELLO-RIPPLE] | [![][LIT-HELLO-RIPPLE-NB]][LIT-HELLO-RIPPLE-N] |
+
+## Next.js Env Status
+
+The "health" status of the [Next.js env on Bit](https://bit.cloud/bitdev/nextjs).
+
+| Test Scenario | Bit Stable | Bit Nightly |
+|---------------|------------|-------------|
+|New Next.js Workspace | [![][NEXTJS-CREATE-WORKSPACE-SB]][NEXTJS-CREATE-WORKSPACE-S] | [![][NEXTJS-CREATE-WORKSPACE-NB]][NEXTJS-CREATE-WORKSPACE-N] |
+|Init Workspace + Create Next.js App | [![][NEXTJS-CREATE-APP-SB]][NEXTJS-CREATE-APP-S] | [![][NEXTJS-CREATE-APP-NB]][NEXTJS-CREATE-APP-N] |
