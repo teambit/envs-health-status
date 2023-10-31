@@ -25,11 +25,11 @@ jobs:
       - name: Create a Angular env
         run: |
           cd my-workspace
-          bit create ng-env envs/my-angular-env --aspect teambit.angular/angular --log error
+          bit create ng-env envs/my-angular-env --aspect bitdev.angular/angular-env --log error
       - name: Create a Angular component and set env
         run: |
           cd my-workspace
-          bit create ng-module pages/welcome --aspect teambit.angular/angular --log error
+          bit create ng-module pages/welcome --aspect bitdev.angular/angular-env --log error
           bit env set my-org.my-scope/pages/welcome my-org.my-scope/envs/my-angular-env --log error
       - name: Install dependencies
         run: |

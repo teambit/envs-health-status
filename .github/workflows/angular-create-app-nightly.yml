@@ -25,7 +25,7 @@ jobs:
       - name: Create a Angular app component
         run: |
           cd my-workspace
-          bit create ng-app apps/my-app --aspect teambit.angular/angular --log error
+          bit create ng-app apps/my-app --aspect bitdev.angular/angular-env --log error
           bit use apps/my-app --log error
       - name: Install dependencies
         run: |

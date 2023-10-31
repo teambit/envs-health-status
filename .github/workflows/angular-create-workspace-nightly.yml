@@ -21,7 +21,7 @@ jobs:
           bit --version
       - name: Create a new workspace
         run: |
-          bit new angular my-workspace --env teambit.angular/angular --default-scope my-org.my-scope --log error
+          bit new angular my-workspace --env bitdev.angular/angular-env --default-scope my-org.my-scope --log error
       - name: Show components, envs and status
         run: |
           cd my-workspace
