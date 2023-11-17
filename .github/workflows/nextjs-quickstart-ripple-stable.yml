@@ -1,0 +1,33 @@
+name: Next.js - Quickstart - Ripple
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/ops:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Initialize a workspace
+      run: |
+        bit --version
+        bit init my-nextjs-workspace --bare --log error
+    - name: Bit sign get-hello-world
+      run: |
+        cd my-nextjs-workspace
+        bit sign learnbit-nextjs.hello-world/get-hello-world --multiple --rebuild --log error
+    - name: Bit sign ui/hello-world
+      run: |
+        cd my-nextjs-workspace
+        bit sign learnbit-nextjs.hello-world/ui/hello-world --multiple --rebuild --log error
+    - name: Bit sign hello-world-app
+      run: |
+        cd my-nextjs-workspace
+        bit sign learnbit-nextjs.hello-world/hello-world-app --multiple --rebuild --log error
+    continue-on-error: false
