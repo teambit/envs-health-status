@@ -191,6 +191,16 @@
 [LIT-HELLO-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml/badge.svg
 
 <!-- Next.js -->
+[NEXTJS-QUICKSTART]: https://bit.dev/docs/quick-start/hello-world-nextjs
+[NEXTJS-QUICKSTART-S]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-stable.yml
+[NEXTJS-QUICKSTART-SB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-stable.yml/badge.svg
+[NEXTJS-QUICKSTART-N]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-nightly.yml
+[NEXTJS-QUICKSTART-NB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-nightly.yml/badge.svg
+[NEXTJS-QUICKSTART-RIPPLE-S]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-ripple-stable.yml
+[NEXTJS-QUICKSTART-RIPPLE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-ripple-stable.yml/badge.svg
+[NEXTJS-QUICKSTART-RIPPLE-N]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-ripple-nightly.yml
+[NEXTJS-QUICKSTART-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-quickstart-ripple-nightly.yml/badge.svg
+
 [NEXTJS-CREATE-WORKSPACE-S]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-workspace-stable.yml
 [NEXTJS-CREATE-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-workspace-stable.yml/badge.svg
 [NEXTJS-CREATE-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-workspace-nightly.yml
@@ -217,6 +227,7 @@ This section shows the `health` status of the Bit community guides and quickstar
 |[Angular Hello][ANGULAR-QUICKSTART] | [![][ANGULAR-QUICKSTART-SB]][ANGULAR-QUICKSTART-S] | [![][ANGULAR-QUICKSTART-NB]][ANGULAR-QUICKSTART-N] |
 |[Vue Hello][VUE-QUICKSTART] | [![][VUE-QUICKSTART-SB]][VUE-QUICKSTART-S] | [![][VUE-QUICKSTART-NB]][VUE-QUICKSTART-N] |
 |[Vue Todo MVC][VUE-QUICKSTART-TODO-MVC] | [![][VUE-QUICKSTART-TODO-MVC-SB]][VUE-QUICKSTART-TODO-MVC-S] | [![][VUE-QUICKSTART-TODO-MVC-NB]][VUE-QUICKSTART-TODO-MVC-N] |
+|[Next.js Hello][NEXTJS-QUICKSTART] | [![][NEXTJS-QUICKSTART-SB]][NEXTJS-QUICKSTART-S] | [![][NEXTJS-QUICKSTART-NB]][NEXTJS-QUICKSTART-N] |
 
 ## React Env Status
 The "health" status of the React env on Bit.
@@ -255,6 +266,17 @@ The "health" status of the Vue env on Bit.
 |[Vue Hello][VUE-QUICKSTART] | [![][VUE-QUICKSTART-SB]][VUE-QUICKSTART-S] | [![][VUE-QUICKSTART-NB]][VUE-QUICKSTART-N] |
 |[Vue Todo MVC][VUE-QUICKSTART-TODO-MVC] | [![][VUE-QUICKSTART-TODO-MVC-SB]][VUE-QUICKSTART-TODO-MVC-S] | [![][VUE-QUICKSTART-TODO-MVC-NB]][VUE-QUICKSTART-TODO-MVC-N] |
 
+## Next.js Env Status
+
+The "health" status of the [Next.js env on Bit](https://bit.cloud/bitdev/nextjs).
+
+| Test Scenario | Bit Stable | Bit Nightly |
+|---------------|------------|-------------|
+|New Next.js Workspace | [![][NEXTJS-CREATE-WORKSPACE-SB]][NEXTJS-CREATE-WORKSPACE-S] | [![][NEXTJS-CREATE-WORKSPACE-NB]][NEXTJS-CREATE-WORKSPACE-N] |
+|Init Workspace + Create Next.js App | [![][NEXTJS-CREATE-APP-SB]][NEXTJS-CREATE-APP-S] | [![][NEXTJS-CREATE-APP-NB]][NEXTJS-CREATE-APP-N] |
+|Hello World Quickstart| [![][NEXTJS-QUICKSTART-SB]][NEXTJS-QUICKSTART-S] | [![][NEXTJS-QUICKSTART-NB]][NEXTJS-QUICKSTART-N] |
+|Hello World Quickstart Ripple | [![][NEXTJS-QUICKSTART-RIPPLE-SB]][NEXTJS-QUICKSTART-RIPPLE-S] | [![][NEXTJS-QUICKSTART-RIPPLE-NB]][NEXTJS-QUICKSTART-RIPPLE-N] |
+
 # Html Env Status
 
 The "health" status of the Html env on Bit.
@@ -280,12 +302,3 @@ The "health" status of the Lit env on Bit.
 |Init Workspace + Create Env + Create Component | [![][LIT-CREATE-ENV-COMP-SB]][LIT-CREATE-ENV-COMP] | [![][LIT-CREATE-ENV-COMP-NB]][LIT-CREATE-ENV-COMP-N] |
 |Hello World Quickstart | [![][LIT-HELLO-SB]][LIT-HELLO] | [![][LIT-HELLO-NB]][LIT-HELLO-N] |
 |Hello World Quickstart Ripple | [![][LIT-HELLO-RIPPLE-SB]][LIT-HELLO-RIPPLE] | [![][LIT-HELLO-RIPPLE-NB]][LIT-HELLO-RIPPLE-N] |
-
-## Next.js Env Status
-
-The "health" status of the [Next.js env on Bit](https://bit.cloud/bitdev/nextjs).
-
-| Test Scenario | Bit Stable | Bit Nightly |
-|---------------|------------|-------------|
-|New Next.js Workspace | [![][NEXTJS-CREATE-WORKSPACE-SB]][NEXTJS-CREATE-WORKSPACE-S] | [![][NEXTJS-CREATE-WORKSPACE-NB]][NEXTJS-CREATE-WORKSPACE-N] |
-|Init Workspace + Create Next.js App | [![][NEXTJS-CREATE-APP-SB]][NEXTJS-CREATE-APP-S] | [![][NEXTJS-CREATE-APP-NB]][NEXTJS-CREATE-APP-N] |
