@@ -25,7 +25,9 @@ jobs:
           ls -la my-hello-world-nextjs/my-scope/hello-world-app
           cat my-hello-world-nextjs/my-scope/hello-world-app/tsconfig.json
           rm my-hello-world-nextjs/my-scope/hello-world-app/tsconfig.json
-          cd my-hello-world-nextjs && bit deps get envs/my-nextjs-env
+          cd my-hello-world-nextjs
+          bit deps get envs/my-nextjs-env
+          bit list
       - name: Run the app component
         run: |
           cd my-hello-world-nextjs
