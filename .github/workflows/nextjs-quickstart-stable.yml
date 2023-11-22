@@ -29,6 +29,7 @@ jobs:
       - name: Run the app component
         run: |
           cd my-hello-world-nextjs
+          rm my-scope/hello-world-app/tsconfig.json
           bit run hello-world-app &
           checkserver http://localhost:3000
       - name: Preview components
