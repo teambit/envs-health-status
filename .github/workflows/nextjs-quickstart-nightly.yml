@@ -45,7 +45,7 @@ jobs:
         run: |
           barescope my-org.my-scope-name my-hello-world-nextjs
           cd my-hello-world-nextjs
-          bit scope rename org.scope-name my-org.my-scope-name --refactor
+          bit scope rename my-org.my-scope my-org.my-scope-name --refactor
           bit link
           bit compile
           bit tag --message "initial tag"
