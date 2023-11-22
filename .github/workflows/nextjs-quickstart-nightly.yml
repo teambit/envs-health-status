@@ -26,7 +26,7 @@ jobs:
           bit list
           bit envs
           bit deps get envs/my-nextjs-env
-          [ -e my-scope/hello-world-app/tsconfig.json ] && rm rm my-scope/hello-world-app/tsconfig.json
+          rm -f -- my-scope/hello-world-app/tsconfig.json
       - name: Run the app component
         run: |
           cd my-hello-world-nextjs
