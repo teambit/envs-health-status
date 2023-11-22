@@ -20,14 +20,13 @@ jobs:
       - name: Initialize a workspace
         run: |
           bit new hello-world-nextjs my-hello-world-nextjs --env teambit.community/starters/hello-world-nextjs
-      - name: Debug nextjs before run
+      - name: Show component details
         run: |
-          ls -la my-hello-world-nextjs/my-scope/hello-world-app
-          cat my-hello-world-nextjs/my-scope/hello-world-app/tsconfig.json
-          rm my-hello-world-nextjs/my-scope/hello-world-app/tsconfig.json
           cd my-hello-world-nextjs
-          bit deps get envs/my-nextjs-env
           bit list
+          bit envs
+          bit deps get envs/my-nextjs-env
+          rm my-scope/hello-world-app/tsconfig.json
       - name: Run the app component
         run: |
           cd my-hello-world-nextjs

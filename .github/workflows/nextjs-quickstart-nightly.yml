@@ -20,6 +20,13 @@ jobs:
       - name: Initialize a workspace
         run: |
           bit new hello-world-nextjs my-hello-world-nextjs --env teambit.community/starters/hello-world-nextjs
+      - name: Show component details
+        run: |
+          cd my-hello-world-nextjs
+          bit list
+          bit envs
+          bit deps get envs/my-nextjs-env
+          rm my-scope/hello-world-app/tsconfig.json
       - name: Run the app component
         run: |
           cd my-hello-world-nextjs
