@@ -24,12 +24,11 @@ jobs:
         run: |
           ls -la my-hello-world-nextjs/my-scope/hello-world-app
           cat my-hello-world-nextjs/my-scope/hello-world-app/tsconfig.json
-          cd my-hello-world-nextjs && bit deps get envs/my-nextjs-env
           rm my-hello-world-nextjs/my-scope/hello-world-app/tsconfig.json
+          cd my-hello-world-nextjs && bit deps get envs/my-nextjs-env
       - name: Run the app component
         run: |
           cd my-hello-world-nextjs
-          rm my-scope/hello-world-app/tsconfig.json
           bit run hello-world-app &
           checkserver http://localhost:3000
       - name: Preview components
