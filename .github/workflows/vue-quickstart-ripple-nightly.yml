@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: 
-      image: bitsrc/ops:latest
+      image: bitsrc/nightly:latest
     env:
       HOME: /home/bituser
         
