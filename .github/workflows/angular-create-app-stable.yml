@@ -23,7 +23,6 @@ jobs:
         run: |
           cd my-workspace
           bit create ng-app apps/my-app --aspect bitdev.angular/angular-env --log error
-          bit use apps/my-app --log error
       - name: Install dependencies
         run: |
           cd my-workspace
