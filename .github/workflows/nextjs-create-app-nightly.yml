@@ -24,7 +24,7 @@ jobs:
     - name: Create a Next.js app component
       run: |
         cd my-nextjs-workspace
-        bit create nextjs apps/my-nextjs-app --aspect bitdev.nextjs/nextjs-env --log error
+        bit create nextjs apps/my-nextjs-app --aspect frontend.nextjs/nextjs-env --log error
         bit install --add-missing-deps --log error
         bit use apps/my-nextjs-app --log error
     - name: Show components, envs and status

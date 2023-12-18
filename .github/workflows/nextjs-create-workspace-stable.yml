@@ -19,7 +19,7 @@ jobs:
         bit
         bvm
         bvm upgrade
-        bit new nextjs my-nextjs-workspace --env bitdev.nextjs/nextjs-env --default-scope org.scope-name --log error
+        bit new nextjs my-nextjs-workspace --env frontend.nextjs/nextjs-env --default-scope org.scope-name --log error
     - name: Check initial status
       run: |
         cd my-nextjs-workspace
