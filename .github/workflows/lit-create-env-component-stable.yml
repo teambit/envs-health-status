@@ -22,11 +22,11 @@ jobs:
       - name: Create a Lit env
         run: |
           cd my-workspace
-          bit create lit-env envs/my-lit-env --aspect teambit.web-components/lit --log error
+          bit create lit-env envs/my-lit-env --aspect frontend.lit/lit-env --log error
       - name: Create a Lit component and set env
         run: |
           cd my-workspace
-          bit create lit pages/welcome-home --aspect teambit.web-components/lit --log error
+          bit create lit pages/welcome-home --aspect frontend.lit/lit-env --log error
           bit env set my-org.my-scope/pages/welcome-home my-org.my-scope/envs/my-lit-env --log error
       - name: Install dependencies
         run: |

@@ -20,7 +20,7 @@ jobs:
           bvm
           bvm config set RELEASE_TYPE nightly
           bvm upgrade
-          bit new html my-html-workspace --aspect teambit.html/html-env --default-scope org.scope-name --log error
+          bit new html my-html-workspace --aspect frontend.html/html-env --default-scope org.scope-name --log error
       - name: Check initial status
         run: |
           cd my-html-workspace

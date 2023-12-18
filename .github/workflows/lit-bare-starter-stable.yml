@@ -20,7 +20,7 @@ jobs:
           bvm
           bvm config set RELEASE_TYPE nightly
           bvm upgrade
-          bit new lit my-lit-workspace --aspect teambit.web-components/lit --default-scope org.scope-name --log error
+          bit new lit my-lit-workspace --aspect frontend.lit/lit-env --default-scope org.scope-name --log error
       - name: Check initial status
         run: |
           cd my-lit-workspace

@@ -19,7 +19,7 @@ jobs:
           bvm config
       - name: Initialize a workspace
         run: |
-          bit new vanilla-hello-world my-hello-world-vanilla --env teambit.community/starters/hello-world-vanilla --log error
+          bit new html-hello-world my-hello-world-vanilla --env teambit.community/starters/hello-world-vanilla --log error
       - name: Run the app component
         run: |
           cd my-hello-world-vanilla

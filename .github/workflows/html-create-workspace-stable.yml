@@ -18,7 +18,7 @@ jobs:
           bvm config
       - name: Create a new workspace
         run: |
-          bit new html my-workspace --env teambit.html/html-env --default-scope my-org.my-scope --log error
+          bit new html my-workspace --env frontend.html/html-env --default-scope my-org.my-scope --log error
       - name: Show components, envs and status
         run: |
           cd my-workspace

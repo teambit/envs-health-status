@@ -18,7 +18,7 @@ jobs:
           bvm config
       - name: Create a new workspace
         run: |
-          bit new lit my-workspace --env teambit.web-components/lit --default-scope my-org.my-scope --log error
+          bit new lit my-workspace --env frontend.lit/lit-env --default-scope my-org.my-scope --log error
       - name: Create a React component and set env
         run: |
           cd my-workspace
