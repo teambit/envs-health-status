@@ -19,7 +19,7 @@ jobs:
           bvm config
       - name: Initialize a workspace
         run: |
-          bit new hello-world-nextjs my-hello-world-nextjs --env teambit.community/starters/hello-world-nextjs
+          bit new hello-world-nextjs my-hello-world-nextjs --env frontend.nextjs/templates/community-starters/hello-world-nextjs
       - name: Show component details
         run: |
           cd my-hello-world-nextjs
