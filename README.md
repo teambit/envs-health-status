@@ -365,8 +365,7 @@ The "health" status of the Svelte env on Bit.
 |New Svelte Workspace | [![][SVELTE-NEW-WORKSPACE-SB]][SVELTE-NEW-WORKSPACE] | [![][SVELTE-NEW-WORKSPACE-NB]][SVELTE-NEW-WORKSPACE-N] |
 |New Svelte Workspace + Create Component | [![][SVELTE-NEW-COMPONENT-SB]][SVELTE-NEW-COMPONENT] | [![][SVELTE-NEW-COMPONENT-NB]][SVELTE-NEW-COMPONENT-N] |
 |Init Workspace + Create Env + Create Component | [![][SVELTE-CREATE-ENV-COMP-SB]][SVELTE-CREATE-ENV-COMP] | [![][SVELTE-CREATE-ENV-COMP-NB]][SVELTE-CREATE-ENV-COMP-N] |
-<!-- |Hello World Quickstart | [![][SVELTE-HELLO-SB]][SVELTE-HELLO] | [![][SVELTE-HELLO-NB]][SVELTE-HELLO-N] |
-|Hello World Quickstart Ripple | [![][SVELTE-HELLO-RIPPLE-SB]][SVELTE-HELLO-RIPPLE] | [![][SVELTE-HELLO-RIPPLE-NB]][SVELTE-HELLO-RIPPLE-N] | -->
+
 
 ## Stencil Env Status
 
@@ -378,5 +377,3 @@ The "health" status of the Stencil env on Bit.
 |New Stencil Workspace | [![][STENCIL-NEW-WORKSPACE-SB]][STENCIL-NEW-WORKSPACE] | [![][STENCIL-NEW-WORKSPACE-NB]][STENCIL-NEW-WORKSPACE-N] |
 |New Stencil Workspace + Create Component | [![][STENCIL-NEW-COMPONENT-SB]][STENCIL-NEW-COMPONENT] | [![][STENCIL-NEW-COMPONENT-NB]][STENCIL-NEW-COMPONENT-N] |
 |Init Workspace + Create Env + Create Component | [![][STENCIL-CREATE-ENV-COMP-SB]][STENCIL-CREATE-ENV-COMP] | [![][STENCIL-CREATE-ENV-COMP-NB]][STENCIL-CREATE-ENV-COMP-N] |
-<!-- |Hello World Quickstart | [![][STENCIL-HELLO-SB]][STENCIL-HELLO] | [![][STENCIL-HELLO-NB]][STENCIL-HELLO-N] |
-|Hello World Quickstart Ripple | [![][STENCIL-HELLO-RIPPLE-SB]][STENCIL-HELLO-RIPPLE] | [![][STENCIL-HELLO-RIPPLE-NB]][STENCIL-HELLO-RIPPLE-N] | -->
