@@ -184,11 +184,11 @@
 [LIT-HELLO-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-stable.yml/badge.svg
 [LIT-HELLO-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-nightly.yml
 [LIT-HELLO-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-nightly.yml/badge.svg
-
+<!-- 
 [LIT-HELLO-RIPPLE]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-stable.yml
 [LIT-HELLO-RIPPLE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-stable.yml/badge.svg
 [LIT-HELLO-RIPPLE-N]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml
-[LIT-HELLO-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml/badge.svg
+[LIT-HELLO-RIPPLE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/lit-hello-world-quickstart-ripple-nightly.yml/badge.svg -->
 
 <!-- Next.js -->
 [NEXTJS-QUICKSTART]: https://bit.dev/docs/quick-start/hello-world-nextjs
@@ -210,6 +210,58 @@
 [NEXTJS-CREATE-APP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-app-stable.yml/badge.svg
 [NEXTJS-CREATE-APP-N]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-app-nightly.yml
 [NEXTJS-CREATE-APP-NB]: https://github.com/teambit/envs-health-status/actions/workflows/nextjs-create-app-nightly.yml/badge.svg
+
+<!-- Svelte -->
+[SVELTE-BARE-STARTER]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-bare-starter-stable.yml
+[SVELTE-BARE-STARTER-SB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-bare-starter-stable.yml/badge.svg
+[SVELTE-BARE-STARTER-N]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-bare-starter-nightly.yml
+[SVELTE-BARE-STARTER-NB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-bare-starter-nightly.yml/badge.svg
+
+[SVELTE-NEW-WORKSPACE]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-workspace-stable.yml
+[SVELTE-NEW-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-workspace-stable.yml/badge.svg
+[SVELTE-NEW-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-workspace-nightly.yml
+[SVELTE-NEW-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-workspace-nightly.yml/badge.svg
+
+[SVELTE-NEW-COMPONENT]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-component-stable.yml
+[SVELTE-NEW-COMPONENT-SB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-component-stable.yml/badge.svg
+[SVELTE-NEW-COMPONENT-N]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-component-nightly.yml
+[SVELTE-NEW-COMPONENT-NB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-component-nightly.yml/badge.svg
+
+[SVELTE-CREATE-ENV-COMP]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-env-component-stable.yml
+[SVELTE-CREATE-ENV-COMP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-env-component-stable.yml/badge.svg
+[SVELTE-CREATE-ENV-COMP-N]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-env-component-nightly.yml
+[SVELTE-CREATE-ENV-COMP-NB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-create-env-component-nightly.yml/badge.svg
+
+[SVELTE-HELLO]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-hello-world-quickstart-stable.yml
+[SVELTE-HELLO-SB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-hello-world-quickstart-stable.yml/badge.svg
+[SVELTE-HELLO-N]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-hello-world-quickstart-nightly.yml
+[SVELTE-HELLO-NB]: https://github.com/teambit/envs-health-status/actions/workflows/svelte-hello-world-quickstart-nightly.yml/badge.svg
+
+<!-- Stencil -->
+[STENCIL-BARE-STARTER]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-bare-starter-stable.yml
+[STENCIL-BARE-STARTER-SB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-bare-starter-stable.yml/badge.svg
+[STENCIL-BARE-STARTER-N]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-bare-starter-nightly.yml
+[STENCIL-BARE-STARTER-NB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-bare-starter-nightly.yml/badge.svg
+
+[STENCIL-NEW-WORKSPACE]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-workspace-stable.yml
+[STENCIL-NEW-WORKSPACE-SB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-workspace-stable.yml/badge.svg
+[STENCIL-NEW-WORKSPACE-N]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-workspace-nightly.yml
+[STENCIL-NEW-WORKSPACE-NB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-workspace-nightly.yml/badge.svg
+
+[STENCIL-NEW-COMPONENT]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-component-stable.yml
+[STENCIL-NEW-COMPONENT-SB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-component-stable.yml/badge.svg
+[STENCIL-NEW-COMPONENT-N]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-component-nightly.yml
+[STENCIL-NEW-COMPONENT-NB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-component-nightly.yml/badge.svg
+
+[STENCIL-CREATE-ENV-COMP]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-env-component-stable.yml
+[STENCIL-CREATE-ENV-COMP-SB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-env-component-stable.yml/badge.svg
+[STENCIL-CREATE-ENV-COMP-N]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-env-component-nightly.yml
+[STENCIL-CREATE-ENV-COMP-NB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-create-env-component-nightly.yml/badge.svg
+
+[STENCIL-HELLO]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-hello-world-quickstart-stable.yml
+[STENCIL-HELLO-SB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-hello-world-quickstart-stable.yml/badge.svg
+[STENCIL-HELLO-N]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-hello-world-quickstart-nightly.yml
+[STENCIL-HELLO-NB]: https://github.com/teambit/envs-health-status/actions/workflows/stencil-hello-world-quickstart-nightly.yml/badge.svg
 
 # Envs Health Status
 Basic e2e runs for default envs created and maintained by bit
@@ -300,5 +352,31 @@ The "health" status of the Lit env on Bit.
 |New Lit Workspace | [![][LIT-NEW-WORKSPACE-SB]][LIT-NEW-WORKSPACE] | [![][LIT-NEW-WORKSPACE-NB]][LIT-NEW-WORKSPACE-N] |
 |New Lit Workspace + Create Component | [![][LIT-NEW-COMPONENT-SB]][LIT-NEW-COMPONENT] | [![][LIT-NEW-COMPONENT-NB]][LIT-NEW-COMPONENT-N] |
 |Init Workspace + Create Env + Create Component | [![][LIT-CREATE-ENV-COMP-SB]][LIT-CREATE-ENV-COMP] | [![][LIT-CREATE-ENV-COMP-NB]][LIT-CREATE-ENV-COMP-N] |
-|Hello World Quickstart | [![][LIT-HELLO-SB]][LIT-HELLO] | [![][LIT-HELLO-NB]][LIT-HELLO-N] |
-|Hello World Quickstart Ripple | [![][LIT-HELLO-RIPPLE-SB]][LIT-HELLO-RIPPLE] | [![][LIT-HELLO-RIPPLE-NB]][LIT-HELLO-RIPPLE-N] |
+<!-- |Hello World Quickstart | [![][LIT-HELLO-SB]][LIT-HELLO] | [![][LIT-HELLO-NB]][LIT-HELLO-N] |
+|Hello World Quickstart Ripple | [![][LIT-HELLO-RIPPLE-SB]][LIT-HELLO-RIPPLE] | [![][LIT-HELLO-RIPPLE-NB]][LIT-HELLO-RIPPLE-N] | -->
+
+## Svelte Env Status
+
+The "health" status of the Svelte env on Bit.
+
+| Test Scenario | Bit Stable | Bit Nightly |
+|---------------|------------|-------------|
+|Svelte Bare Starter | [![][SVELTE-BARE-STARTER-SB]][SVELTE-BARE-STARTER] | [![][SVELTE-BARE-STARTER-NB]][SVELTE-BARE-STARTER-N] |
+|New Svelte Workspace | [![][SVELTE-NEW-WORKSPACE-SB]][SVELTE-NEW-WORKSPACE] | [![][SVELTE-NEW-WORKSPACE-NB]][SVELTE-NEW-WORKSPACE-N] |
+|New Svelte Workspace + Create Component | [![][SVELTE-NEW-COMPONENT-SB]][SVELTE-NEW-COMPONENT] | [![][SVELTE-NEW-COMPONENT-NB]][SVELTE-NEW-COMPONENT-N] |
+|Init Workspace + Create Env + Create Component | [![][SVELTE-CREATE-ENV-COMP-SB]][SVELTE-CREATE-ENV-COMP] | [![][SVELTE-CREATE-ENV-COMP-NB]][SVELTE-CREATE-ENV-COMP-N] |
+<!-- |Hello World Quickstart | [![][SVELTE-HELLO-SB]][SVELTE-HELLO] | [![][SVELTE-HELLO-NB]][SVELTE-HELLO-N] |
+|Hello World Quickstart Ripple | [![][SVELTE-HELLO-RIPPLE-SB]][SVELTE-HELLO-RIPPLE] | [![][SVELTE-HELLO-RIPPLE-NB]][SVELTE-HELLO-RIPPLE-N] | -->
+
+## Stencil Env Status
+
+The "health" status of the Stencil env on Bit.
+
+| Test Scenario | Bit Stable | Bit Nightly |
+|---------------|------------|-------------|
+|Stencil Bare Starter | [![][STENCIL-BARE-STARTER-SB]][STENCIL-BARE-STARTER] | [![][STENCIL-BARE-STARTER-NB]][STENCIL-BARE-STARTER-N] |
+|New Stencil Workspace | [![][STENCIL-NEW-WORKSPACE-SB]][STENCIL-NEW-WORKSPACE] | [![][STENCIL-NEW-WORKSPACE-NB]][STENCIL-NEW-WORKSPACE-N] |
+|New Stencil Workspace + Create Component | [![][STENCIL-NEW-COMPONENT-SB]][STENCIL-NEW-COMPONENT] | [![][STENCIL-NEW-COMPONENT-NB]][STENCIL-NEW-COMPONENT-N] |
+|Init Workspace + Create Env + Create Component | [![][STENCIL-CREATE-ENV-COMP-SB]][STENCIL-CREATE-ENV-COMP] | [![][STENCIL-CREATE-ENV-COMP-NB]][STENCIL-CREATE-ENV-COMP-N] |
+<!-- |Hello World Quickstart | [![][STENCIL-HELLO-SB]][STENCIL-HELLO] | [![][STENCIL-HELLO-NB]][STENCIL-HELLO-N] |
+|Hello World Quickstart Ripple | [![][STENCIL-HELLO-RIPPLE-SB]][STENCIL-HELLO-RIPPLE] | [![][STENCIL-HELLO-RIPPLE-NB]][STENCIL-HELLO-RIPPLE-N] | -->
