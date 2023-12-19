@@ -1,0 +1,54 @@
+name: Svelte - Bare Starter - Nightly
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/nightly:latest
+    env:
+      HOME: /home/bituser
+
+    steps:
+      - name: Initialize a workspace
+        run: |
+          bit
+          bvm
+          bvm config set RELEASE_TYPE nightly
+          bvm upgrade
+          bit new svelte my-svelte-workspace --aspect frontend.svelte/svelte-env --default-scope org.scope-name --log error
+      - name: Check initial status
+        run: |
+          cd my-svelte-workspace
+          # debugging
+          bit list --log error
+          bit status --log error
+          bit templates --log error
+      - name: Create a new component
+        run: |
+          cd my-svelte-workspace
+          bit create svelte ui/my-first --log error
+          bit install --log error
+          bit list --log error
+          bit status --log error
+          bit start --log error &
+          checkserver http://localhost:3000
+      - name: Test & Lint
+        run: |
+          cd my-svelte-workspace
+          bit lint --log error
+          bit test --log error
+      - name: Create a local scope, compile and export
+        run: |
+          barescope my-org.my-scope-name my-svelte-workspace
+          cd my-svelte-workspace
+          bit scope rename org.scope-name my-org.my-scope-name --refactor --log error
+          bit link --log error
+          bit compile --log error
+          bit tag --message "initial tag" --log error
+          bit export --log error
+    continue-on-error: false

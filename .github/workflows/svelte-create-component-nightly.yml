@@ -1,0 +1,57 @@
+name: Svelte - Create Component - Nightly
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/nightly:latest
+    env:
+      HOME: /home/bituser
+    steps:
+      - name: Show BVM config
+        run: |
+          bvm config
+      - name: Create a new workspace
+        run: |
+          bit new svelte my-workspace --env frontend.svelte/svelte-env --default-scope my-org.my-scope --log error
+      - name: Create a React component and set env
+        run: |
+          cd my-workspace
+          bit create svelte pages/welcome-home --log error
+      - name: Install dependencies
+        run: |
+          cd my-workspace
+          bit install --add-missing-deps --log error
+      - name: Show components, envs and status
+        run: |
+          cd my-workspace
+          bit status --log error
+          bit envs --log error
+      - name: Compile, lint, test components
+        run: |
+          cd my-workspace
+          bit compile --log error
+          bit lint --log error
+          bit test --log error
+      - name: Preview components
+        run: |
+          cd my-workspace
+          bit start --log error &
+          checkserver http://localhost:3000
+      - name: Tag components
+        run: |
+          cd my-workspace
+          bit tag --message "initial tag" --log error
+      - name: Create a local scope
+        run: |
+          barescope my-org.my-scope my-workspace
+      - name: Export components
+        run: |
+          cd my-workspace
+          bit export --log error
+    continue-on-error: false
