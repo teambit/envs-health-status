@@ -32,7 +32,7 @@ jobs:
         run: |
           cd my-html-workspace
           bit create html ui/my-first --log error
-          bit install --log error
+          bit install --add-missing-deps --log error
           bit list --log error
           bit status --log error
           bit start --log error &
