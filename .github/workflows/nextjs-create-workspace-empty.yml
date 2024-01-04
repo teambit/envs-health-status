@@ -1,0 +1,54 @@
+name: Next.js - Create Workspace - Empty
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/stable:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Initialize a workspace
+      run: |
+        bit
+        bvm
+        bvm upgrade
+        bit new nextjs my-nextjs-workspace --env frontend.nextjs/nextjs-env --default-scope org.scope-name --empty -log error
+    - name: Check initial status
+      run: |
+        cd my-nextjs-workspace
+        bit list --log error
+        bit status --log error
+        bit templates --log error
+    - name: Create a new app
+      run: |
+        cd my-nextjs-workspace
+        bit install --log error
+        bit list --log error
+        bit app list --log error
+        bit status --log error
+        bit start --log error &
+        checkserver http://localhost:3000
+    - name: Lint and test
+      run: |
+        cd my-nextjs-workspace
+        bit list --log error
+        bit status --log error
+        bit lint --log error
+        bit test --log error
+    - name: Create a local scope, compile and export
+      run: |
+        barescope my-org.my-scope-name my-nextjs-workspace
+        cd my-nextjs-workspace
+        bit scope rename org.scope-name my-org.my-scope-name --refactor --log error
+        bit link --log error
+        bit compile --log error
+        bit tag --message "initial tag" --log error
+        bit export --log error
+    continue-on-error: false
