@@ -17,7 +17,7 @@ jobs:
     - name: Initialize a workspace
       run: |
         bit --version
-        bit new vue-hello-world my-vue-hello-world --aspect learnbit-vue.hello-world/starters/hello-world
+        bit new vue-hello-world my-vue-hello-world --aspect teambit.community/quickstarts/hello-world-vue
     - name: Run the app component
       run: |
         cd my-vue-hello-world
