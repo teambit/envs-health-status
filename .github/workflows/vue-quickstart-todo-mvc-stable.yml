@@ -19,7 +19,7 @@ jobs:
           bvm config
       - name: Initialize a workspace
         run: |
-          bit new vue-todomvc my-vue-todomvc --env teambit.community/quickstarts/todomvc
+          bit new vue-todomvc my-vue-todomvc --env teambit.community/starters/todomvc
       - name: Run the app component
         run: |
           cd my-vue-todomvc
