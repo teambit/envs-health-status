@@ -30,7 +30,7 @@ jobs:
       - name: Run the app component
         run: |
           cd my-hello-world-nextjs
-          bit run hello-world-app &
+          bit run my-nextjs-app &
           checkserver http://localhost:3000
       - name: Preview components
         run: |
