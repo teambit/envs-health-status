@@ -46,7 +46,7 @@ jobs:
         # bit use apps/my-second
         bit app list
         bit status
-        bit run my-second-app &
+        bit run my-second &
         checkserver http://localhost:3000
     - name: Lint and test
       run: |
